@@ -1,35 +1,105 @@
-//created 9-24-18
+//created 9-24-18 by https://codepen.io/taniarascia/pen/dYvvYv
+// Edit by Frank Burley
+
+
 body {
     background-image: url(img/stars_bg.jpg);
     background-repeat: repeat;
-    max-width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+      
     
 }
 header {
     background-color: black;
+    #logo {
+        width: 260px;
+        margin-top: 15px;
+    }
+    ul {
+        text-align: center;
+    }
+    
+}
+
+.hero {
     img {
-        width: 50%;
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 main {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    p {
+        font-family: 'Roboto', sans-serif;
+        padding: 5px 15px 5px 15px;
+        line-height: 1.5em;
+    }
+    section {
+        h2 {
+        font-family: 'Press Start 2P', cursive;
+        color: #000000;
+        text-align: center;
+        padding: 7px;
+        padding-top: 17px;
+        background-color: #FFFFFF;
+        }
+        
+
+        div {
+            // overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+            iframe {
+                
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+        }
+        
+
+       
+    }
+    .intro {
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+    
+    
+    
 }
 footer {
+    background-color: #000000;
+    height: 60px;
     p {
         color: white;
+        text-align: center;
+        padding: 15px;
     }
 }
-h1 {
-    color: beige;
-}
+
 #rainbow {
     
     background-image: url(img/RGB.jpg);
     background-repeat: repeat-x;
     max-width: 100%;
-    height: 12px;
+    height: 7px;
+    // this assures the rainbow stay above the nav
+    position: relative;
     
 
+}
+
+// CSS Grid rules
+.container {
+    display: grid;
 }

@@ -2,28 +2,75 @@
 body {
   background-image: url(img/stars_bg.jpg);
   background-repeat: repeat;
-  max-width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   background-color: black;
 }
-header img {
-  width: 50%;
+header #logo {
+  width: 260px;
+  margin-top: 15px;
+}
+header ul {
+  text-align: center;
+}
+.hero img {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
 }
 main {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
+main p {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 15px 5px 15px;
+  line-height: 1.5em;
+}
+main section h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #000000;
+  text-align: center;
+  padding: 7px;
+  padding-top: 17px;
+  background-color: #FFFFFF;
+}
+main section div {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+main section div iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+main .intro {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+footer {
+  background-color: #000000;
+  height: 60px;
+}
 footer p {
   color: white;
-}
-h1 {
-  color: beige;
+  text-align: center;
+  padding: 15px;
 }
 #rainbow {
   background-image: url(img/RGB.jpg);
   background-repeat: repeat-x;
   max-width: 100%;
-  height: 12px;
+  height: 7px;
+  position: relative;
+}
+.container {
+  display: grid;
 }

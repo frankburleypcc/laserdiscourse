@@ -1,67 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Laserdiscourse</title>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Laserdiscourse</title>
 
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-<!--stylesheets-->
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="hamburger.css">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!--stylesheets-->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+    crossorigin="anonymous">
 
-<!--scripts-->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <!--scripts-->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
 
-<style>
-h2 {
-    font-family: 'Press Start 2P', cursive;
-    color: white;
-    text-align: center;
-}
-</style>
 </head>
 
 <body>
 <header>
-    <img src="img/logo.jpg">
-
-    <button class="hamburger">&#9776;</button>
-    <button class="cross">&#735;</button>
-
-    <div class="menu">
-        <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Rabbit Hole</li></a>
-            <a href="#"><li>Contact</li></a>
-        </ul>
-        </div> 
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+              <img id="logo" src="img/logo.jpg">
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="#!">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+              </li>
+              <li>
+                <a href="#!">RabbitHole</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="#!">Getting Started</a>
+                  </li>
+                  <li>
+                    <a href="#!">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#!">Where to Buy</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#!">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 </header>
-            
+
 <div id="rainbow"></div>
+ 
+<main class="container">
+  <div class="hero">
     
-<main>
+    <img src="img/hero_mobile.jpg" srcset="img/hero_mobile.jpg 200w, img/hero_x1.jpg 400w,img/hero_x2.jpg 1000w," />
+    <!-- <img src="images/space-needle.jpg"
+srcset="images/space-needle.jpg 200w, images/space-needle-2x.jpg 400w,
+images/space-needle-hd.jpg 600w"> -->
+      
+  </div>
+
+  <section class="intro">
     <h2>PAUSE</h2>
-    
-    
+    <p>This site is about all things LaserDisc. It was created as a hub for information that is strewn around the internet. Please feel free to contact me if you have any info you think I should add to the site. Although this is a small community of people, it’s still a community.</p>
+  </section>
 
+  <section class="videoEmbedSection">
+    <h2>PLAY</h2>
+    <div class=".video-responsive">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/43nGOu9agSI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
+    
+  </section>
+
+  <section class="feed">
+      <h2>FLIP</h2>
+      <a class="twitter-timeline" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/laserdiscourse1?ref_src=twsrc%5Etfw">Tweets by laserdiscourse1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </section>
+        
+    
 </main>
 
 <footer>
     <p>Laserdiscourse Copyright <span id="spanYear"></span></p>
+    <i class="fab fa-twitter"></i>
 </footer>
+
+<!-- scripts -->
    
 <script>$('#spanYear').html(new Date().getFullYear());</script> 
-<script src="js/hamburger.js"></script>
+<script src="js/nav.js"></script>
+
 
 </body>
 </html>

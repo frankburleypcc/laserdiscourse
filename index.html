@@ -9,6 +9,7 @@
   <!--stylesheets-->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/cssgrid.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
@@ -32,34 +33,24 @@
     <section class="navigation">
         <div class="nav-container">
           <div class="brand">
-              <img id="logo" src="img/logo.jpg">
+             <a href="index.html"><img id="logo" src="img/logo.jpg"></a>
+              <!-- <img id="logo" src="img/logo.jpg"> -->
           </div>
           <nav>
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
             <ul class="nav-list">
-              <li>
-                <a href="#!">Home</a>
-              </li>
-              <li>
-                <a href="#!">About</a>
-              </li>
-              <li>
-                <a href="#!">RabbitHole</a>
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">About</a></li>
+
+              <li><a href="#!">RabbitHole</a>
                 <ul class="nav-dropdown">
-                  <li>
-                    <a href="#!">Getting Started</a>
-                  </li>
-                  <li>
-                    <a href="#!">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#!">Where to Buy</a>
-                  </li>
+                  <li><a href="#!">Getting Started</a></li>
+                  <li><a href="#!">FAQ</a></li>
+                  <li><a href="#!">Where to Buy</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="#!">Contact</a>
-              </li>
+
+              <li><a href="#!">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -68,7 +59,7 @@
 
 <div id="rainbow"></div>
  
-<main class="container">
+<main>
   <div class="hero">
     
     <img src="img/hero_mobile.jpg" srcset="img/hero_mobile.jpg 200w, img/hero_x1.jpg 400w,img/hero_x2.jpg 1000w," />
@@ -81,28 +72,50 @@ images/space-needle-hd.jpg 600w"> -->
   <section class="intro">
     <h2>PAUSE</h2>
     <p>This site is about all things LaserDisc. It was created as a hub for information that is strewn around the internet. Please feel free to contact me if you have any info you think I should add to the site. Although this is a small community of people, it’s still a community.</p>
+    <p>The video section on this page will be updated randomly so please revisit the site or stay updated with my Twitter posts. If you're ready to jump in as a beginner, please visit the <a href="#"> Getting started</a> section.</p>
+
   </section>
 
-  <section class="videoEmbedSection">
-    <h2>PLAY</h2>
-    <div class=".video-responsive">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/43nGOu9agSI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-
+  <div class="content">
+    <section class="videoEmbedSection">
+        <h2>PLAY</h2>
+        <div class=".video-responsive">
+            <iframe  src="https://www.youtube.com/embed/43nGOu9agSI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     
-  </section>
-
-  <section class="feed">
-      <h2>FLIP</h2>
-      <a class="twitter-timeline" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/laserdiscourse1?ref_src=twsrc%5Etfw">Tweets by laserdiscourse1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </section>
         
+      </section>
     
+      <aside class="feed">
+          <h2>FLIP</h2>
+          <a class="twitter-timeline" data-width="100%" data-height="517px" href="https://twitter.com/laserdiscourse1?ref_src=twsrc%5Etfw">Follow laserdiscourse1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </aside>
+  </div>
 </main>
 
 <footer>
-    <p>Laserdiscourse Copyright <span id="spanYear"></span></p>
-    <i class="fab fa-twitter"></i>
+    
+    <div class="container">
+
+        <div class="item item-1">
+          <p>Laserdiscourse &copy; <span id="spanYear"></span></p>
+          <p>Design and Development by <a href="www.frankburleyweb.com">frankburleyweb</a> </p>
+        </div>
+        <div class="item item-2">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Where to Buy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="item item-3">
+            <a href="#"><i class="fa fa-twitter-square fa-5x"></i></a>
+        </div>
+        
+    </div>
 </footer>
 
 <!-- scripts -->

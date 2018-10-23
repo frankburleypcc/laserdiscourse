@@ -6,7 +6,7 @@ body {
   margin-right: auto;
 }
 header {
-  background-color: black;
+  background-color: #000000;
   margin-bottom: 1px;
 }
 header #logo {
@@ -61,9 +61,15 @@ footer {
   clear: both;
 }
 footer p {
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   padding: 15px;
+}
+footer .item a {
+  color: #B73509;
+}
+footer .item ul a {
+  color: #FFFFFF;
 }
 footer .item-2 {
   margin: auto;
@@ -74,7 +80,9 @@ footer .item-2 ul li {
   color: #FFFFFF;
 }
 footer .item-3 {
-  margin: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 #rainbow {
   background-image: url(img/RGB.jpg);
@@ -104,5 +112,9 @@ footer .item-3 {
   .videoEmbedSection {
     float: left;
     width: 80%;
+  }
+  .item {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }

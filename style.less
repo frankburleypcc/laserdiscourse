@@ -1,6 +1,12 @@
 //created 9-24-18 by https://codepen.io/taniarascia/pen/dYvvYv
 // Edit by Frank Burley
 
+@yellow: #C7A943;
+@blue: #4381A8;
+@orange: #B73509;
+@black: #000000;
+@white: #FFFFFF;
+
 
 body {
     background-image: url(img/stars_bg.jpg);
@@ -11,7 +17,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: @black;
     margin-bottom: 1px;
     #logo {
         width: 260px;
@@ -43,11 +49,11 @@ main {
     section {
         h2 {
         font-family: 'Press Start 2P', cursive;
-        color: #000000;
+        color: @black;
         text-align: center;
         padding: 7px;
         padding-top: 17px;
-        background-color: #FFFFFF;
+        background-color: @white;
         }
         
 
@@ -74,15 +80,28 @@ main {
 }
 
 footer {
-    background-color: #000000;
+    background-color: @black;
     //height: 220px;
     //z-index: -1;
     position: relative;
     clear: both;
     p {
-        color: white;
+        color: @white;
         text-align: center;
         padding: 15px;
+    }
+    .item {
+        
+        a {
+            color: @orange;
+        }
+        ul {
+            a {
+                color: @white;
+            }
+        }
+    
+        
     }
     .item-2 {
         
@@ -91,13 +110,14 @@ footer {
             li {
                 text-align: center;
                 padding: 5px;
-                color: #FFFFFF;
+                color: @white;
             }
         }
     }
     .item-3 {
-        margin: auto;
-        
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -118,7 +138,7 @@ footer {
 
 @media only screen and (min-width: 720px) {
     .content {
-        background-color: #FFFFFF;
+        background-color: @white;
         clear: both;
             .feed {
                 padding-top: 15px;
@@ -128,12 +148,16 @@ footer {
                 display: block;
                 width: 20%;
                 height: 565px;
-                background-color: #FFFFFF;
+                background-color: @white;
             }
     }
     .videoEmbedSection {
         float: left;
         width: 80%
+    }
+    .item {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
    
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Laserdiscourse</title>
+  <title>Laserdiscourse - Where to Buy</title>
 
   <!--stylesheets-->
   <link rel="stylesheet" href="reset.css">
@@ -39,19 +39,19 @@
           <nav>
             <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
             <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                
-                <li><a href="#!">RabbitHole</a>
-                  <ul class="nav-dropdown">
-                    <li><a href="gettingstarted.html">Getting Started</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="wheretobuy.html">Where to Buy</a></li>
-                  </ul>
-                </li>
-  
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+
+              <li><a href="#!">RabbitHole</a>
+                <ul class="nav-dropdown">
+                  <li><a href="gettingstarted.html">Getting Started</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="wheretobuy.html">Where to Buy</a></li>
+                </ul>
+              </li>
+
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
           </nav>
         </div>
       </section>
@@ -63,34 +63,51 @@
   <div class="hero">
     
     <img src="img/hero_mobile.jpg" srcset="img/hero_mobile.jpg 200w, img/hero_x1.jpg 400w,img/hero_x2.jpg 1000w," />
-    <!-- <img src="images/space-needle.jpg"
-srcset="images/space-needle.jpg 200w, images/space-needle-2x.jpg 400w,
-images/space-needle-hd.jpg 600w"> -->
       
   </div>
+  <div class="whereToBuy">
+        <!-- <div>
+          
+          <input type="text" id="search" name="search" style="margin: 10px;width: 165px;" onkeyup="filter()">
+          
+        </div> -->
 
-  <section class="intro">
-    <h2>PAUSE</h2>
-    <p>This site is about all things LaserDisc. It was created as a hub for information that is strewn around the internet. Please feel free to contact me if you have any info you think I should add to the site. Although this is a small community of people, it’s still a community.</p>
-    <p>The video section on this page will be updated randomly so please revisit the site or stay updated with my Twitter posts. If you're ready to jump in as a beginner, please visit the <a href="#"> Getting started</a> section.</p>
+        <!-- <div>
+          <select id="select" size="10" style="width: 100%; height: 270px;">
+              <option>Alaska</option>
+              <option>California</option>
+              <option>Colorado</option>
+              <option>Florida</option>
+              <option>Idaho</option>
+              <option>Michigan</option>
+              <option>Minnesota</option>
+              <option>Montana</option>
+              <option>Oregon
+                    <ul>
+                            <li>Everyday Music - Portland</li>
+                        </ul>
+              </option>
+              <option>Washington</option>
+          </select>
+        </div> 
+      </div> -->
 
-  </section>
-
-  <div class="content">
-    <section class="videoEmbedSection">
-        <h2>PLAY</h2>
-        <div class=".video-responsive">
-            <iframe  src="https://www.youtube.com/embed/43nGOu9agSI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+  <!-- <section class="wrapper">
     
         
-      </section>
-    
-      <aside class="feed">
-          <h2>FLIP</h2>
-          <a class="twitter-timeline" data-width="100%" data-height="517px" href="https://twitter.com/laserdiscourse1?ref_src=twsrc%5Etfw">Follow laserdiscourse1</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </aside>
-  </div>
+   </section> -->
+   <section>
+       <h2>Where To BUY</h2>
+        <h3>Oregon</h3>
+        <h4>Portland</h4>
+        <ul>
+            <li>Everyday Music</li>
+        </ul>
+   </section>
+
+   
+
+
 </main>
 
 <footer>
@@ -119,6 +136,22 @@ images/space-needle-hd.jpg 600w"> -->
 </footer>
 
 <!-- scripts -->
+
+
+<script>
+    function filter() {
+    var keyword = document.getElementById("search").value;
+    var select = document.getElementById("select");
+    for (var i = 0; i < select.length; i++) {
+        var txt = select.options[i].text;
+        if (txt.substring(0, keyword.length).toLowerCase() !== keyword.toLowerCase() && keyword.trim() !== "") {
+          $(select.options[i]).attr('disabled', 'disabled').hide();
+        } else {
+          $(select.options[i]).removeAttr('disabled').show();
+        }
+    }
+}
+</script>
    
 <script>$('#spanYear').html(new Date().getFullYear());</script> 
 <script src="js/nav.js"></script>

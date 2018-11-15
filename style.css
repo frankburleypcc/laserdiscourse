@@ -41,6 +41,17 @@ main section h2 {
   padding-top: 17px;
   background-color: #FFFFFF;
 }
+main section h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75em;
+  padding-bottom: 20px;
+}
+main section h4 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
 main section div {
   padding-bottom: 56.25%;
   position: relative;
@@ -52,6 +63,16 @@ main section div iframe {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+main section ul {
+  color: #B73509;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+main .lists p {
+  text-align: center;
+  padding-bottom: 20px;
 }
 main .intro {
   background-color: #FFFFFF;

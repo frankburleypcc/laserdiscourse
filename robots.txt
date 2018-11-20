@@ -1,0 +1,3 @@
+Sitemap: http://www.laserdiscourse.com/sitemap.xml
+User-agent:*
+Disallow:
